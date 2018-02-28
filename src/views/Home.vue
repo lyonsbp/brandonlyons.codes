@@ -3,7 +3,7 @@
     <v-parallax src="../assets/background.jpg" height="600px">
       <v-layout align-center>
         <v-flex xs12>
-          <v-jumbotron dark  color="grey darken-4" class="elevation-5" ripple>
+          <v-jumbotron dark height="250px" color="grey darken-4" class="elevation-5" ripple>
             <h3 class="display-3">Hello, friend</h3>
             <span class="subheading">My name is Brandon Lyons
               <br/>
