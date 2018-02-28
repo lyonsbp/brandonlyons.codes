@@ -1,11 +1,14 @@
 <template>
   <div id="app">
     <v-app>
-      <v-toolbar app dark class="elevation-1 text-lg-center">
-        <div id="nav">
-          <router-link to="/">Home</router-link>
-          <router-link to="/about">About</router-link>
-        </div>
+      <v-toolbar app dark>
+        <v-spacer></v-spacer>
+        <v-toolbar-items class="hidden-sm-and-down">
+          <v-btn flat>Home</v-btn>  
+          <v-btn flat>Experience</v-btn>
+          <v-btn flat>Projects</v-btn>
+        </v-toolbar-items>
+        <v-spacer></v-spacer>
       </v-toolbar>
       <v-content>
         <v-container fluid>
@@ -23,7 +26,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  color: #2c3e50;
+  color: #ffffff;
+  background-color: #2c3e50;
 }
 
 #nav {
