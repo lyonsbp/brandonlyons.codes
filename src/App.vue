@@ -16,7 +16,7 @@
         </v-container>
       </v-content>
       <v-footer app></v-footer>
-    </v-app>
+    </v-app>  
   </div>
 </template>
 
