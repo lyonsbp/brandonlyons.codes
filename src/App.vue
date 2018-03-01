@@ -3,7 +3,7 @@
     <v-app>
       <v-toolbar app dark>
         <v-spacer></v-spacer>
-        <v-toolbar-items class="hidden-sm-and-down">
+        <v-toolbar-items class="hidden-xs-and-down">
           <v-btn flat>Home</v-btn>  
           <v-btn flat>Experience</v-btn>
           <v-btn flat>Projects</v-btn>
