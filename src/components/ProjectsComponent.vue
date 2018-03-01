@@ -1,5 +1,9 @@
 <template>
-    <p> Projects </p>
+    <v-card dark color="grey darken-4" class="elevation-10" ripple>
+        <v-card-title primary-title>
+            <div class="headline ml-2">Projects</div>
+        </v-card-title>
+    </v-card>
 </template>
 
 <script lang="ts">
