@@ -1,33 +1,42 @@
 <template>
   <div class="home">
-    <v-parallax src="../assets/background.jpg" height="600px">
-      <v-layout align-center>
-        <v-flex xs12 lg8 offset-lg2>
-          <v-jumbotron dark height="200px" color="grey darken-4" class="elevation-10" ripple>
-            <h3 class="display-3 mt-4">Hello, friend</h3>
-            <span class="subheading">My name is Brandon Lyons
-              <br/>
-              Learning new technologies to build a cleaner user experience is my idea of fun
-            </span>
-          </v-jumbotron>
-          
-        </v-flex>
-      </v-layout>
-    </v-parallax>
+    <v-layout id="home-section">
+      <v-flex xs12 lg10 offset-lg1>
+        <welcome-component></welcome-component>          
+      </v-flex>
+    </v-layout>
+    <v-layout row wrap id="experience-section">
+      <v-flex xs12 lg10 offset-lg1>
+        <experience-component></experience-component>
+      </v-flex>
+    </v-layout>
   </div>
 </template>
 
 <script lang="ts">
 import { Component, Vue } from 'vue-property-decorator';
 import Vuetify from 'vuetify';
-import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
+import WelcomeComponent from '@/components/WelcomeComponent.vue';
+import ExperienceComponent from '@/components/ExperienceComponent.vue';
+import ProjectsComponent from '@/components/ProjectsComponent.vue';
 
 Vue.use(Vuetify);
 
 @Component({
   components: {
-    HelloWorld,
+    WelcomeComponent,
+    ExperienceComponent,
+    ProjectsComponent,
   },
 })
 export default class Home extends Vue {}
 </script>
+
+<style scoped>
+  #home-section {
+    height: 100vh;
+  }
+  #experience-section {
+    height: 100vh;
+  }
+</style>
