@@ -2,7 +2,7 @@
   <div class="home">
     <v-parallax src="../assets/background.jpg" height="600px">
       <v-layout align-center>
-        <v-flex xs8 offset-xs2>
+        <v-flex xs10 offset-xs1 lg8 offset-lg2>
           <v-jumbotron dark height="200px" color="grey darken-4" class="elevation-10" ripple>
             <h3 class="display-3 mt-4">Hello, friend</h3>
             <span class="subheading">My name is Brandon Lyons
