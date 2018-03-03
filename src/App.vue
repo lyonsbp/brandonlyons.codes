@@ -5,8 +5,8 @@
         <v-spacer></v-spacer>
         <v-toolbar-items>
           <v-btn @click="$vuetify.goTo(0)" flat>Home</v-btn>  
-          <v-btn @click="$vuetify.goTo('#experience-section', { offset: -100})" flat>Experience</v-btn>
-          <v-btn @click="$vuetify.goTo('#projects-section', { offset: -100 })" flat>Projects</v-btn>
+          <v-btn @click="$vuetify.goTo('#experience-section', { offset: -80 })" flat>Experience</v-btn>
+          <v-btn @click="$vuetify.goTo('#projects-section', { offset: -80 })" flat>Projects</v-btn>
         </v-toolbar-items>
         <v-spacer></v-spacer>
       </v-toolbar>

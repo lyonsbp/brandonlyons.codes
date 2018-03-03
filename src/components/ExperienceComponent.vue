@@ -4,7 +4,7 @@
             <div class="headline ml-2">Work History</div>
         </v-card-title>
         <v-divider class="mb-2"></v-divider>
-            <v-expansion-panel inset>
+            <v-expansion-panel popout>
                 <v-expansion-panel-content ripple v-for="(item, index) in jobs" :key="index" class="mb-1 mt-1 elevation-10">
                     <div slot="header">
                         <div class="headline">{{item.title}} - {{item.employer}}</div>
