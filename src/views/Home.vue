@@ -1,6 +1,6 @@
 <template>
   <div class="home">
-    <v-layout id="home-section">
+    <v-layout row id="home-section">
       <v-flex xs12 lg10 offset-lg1>
         <welcome-component></welcome-component>          
       </v-flex>
@@ -8,12 +8,12 @@
 
     <v-layout row wrap id="experience-section">
       <v-flex xs12 lg10 offset-lg1>
-        <experience-component></experience-component>
+        <experience-component class="mb-4"></experience-component>
       </v-flex>
     </v-layout>
 
     <v-layout row wrap id="projects-section">
-      <v-flex xs12 lg10 offset-lg1>
+      <v-flex xs12 lg10 offset-lg1 class="">
         <projects-component></projects-component>
       </v-flex>
     </v-layout>
@@ -44,7 +44,7 @@ export default class Home extends Vue {}
     height: 100vh;
   }
   #experience-section {
-    height: 100vh;
+    min-height: 100vh;
   }
   #projects-section {
     height: 100vh;
